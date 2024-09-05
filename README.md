@@ -21,13 +21,14 @@ This project is a web-based application for early-stage breast cancer detection 
 - **Accurate Predictions**: Based on a trained model that analyzes key features such as clump thickness, cell size, and others.
 
 ## Installation
-- ```bash
+```bash
     virtualenv env
     ./env/Script/activate.ps1
     python app.py
-
+```
 **Clone the Repository**
 
    ```bash
    git clone https://github.com/Sabbir45ali/BrestCancerDetection.git
    cd BrestCancerDetection
+```
