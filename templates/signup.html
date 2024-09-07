@@ -9,13 +9,10 @@
     <title>loginpage</title>
 </head>
 <body>
-    <div class="container" id="contaoner">
+    <div class="container" id="container">
         <div class="sign-up">
             <form>
                 <h1>Create Account</h1>
-                <div class="icons">
-                    <a href="#" class="icon"></a>
-                </div>
                 <span>use email for registeration</span>
                 <input type="text" placeholder="name"/>
                 <input type="number" placeholder="phn no"/>
@@ -27,9 +24,6 @@
         <div class="sign-in">
             <form>
                 <h1>Sign In</h1>
-                <div class="icons">
-                    <a href="#" class="icon"></a>
-                </div>
                 <span>use email and password</span>
                 <input type="email" placeholder="email"/>
                 <input type="password" placeholder="password"/>
@@ -52,5 +46,6 @@
             </div>
         </div>
     </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
 </html>
