@@ -12,6 +12,10 @@ This project is a web-based application for early-stage breast cancer detection 
 
 ![WhatsApp Image 2024-08-31 at 19 21 30_4d06ed4b](https://github.com/user-attachments/assets/77df7017-da38-4fad-a721-22f0d8219eea)
 
+##ROC Curve
+
+![WhatsApp Image 2024-09-07 at 21 45 39_9fe5314b](https://github.com/user-attachments/assets/29383adc-1028-4011-9c9e-c4de1375f19f)
+
 
 ## Features
 
