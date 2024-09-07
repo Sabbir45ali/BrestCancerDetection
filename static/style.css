@@ -1,4 +1,7 @@
-.heading {
-  color: blue;
-  background-color:burlywood;
+.navbar-brand{
+  color: rgba(0, 0, 0, 0.795);
+  font-weight: bold;
+}
+.container-fluid{
+  background-color: rgba(150, 150, 224, 0.452);
 }
