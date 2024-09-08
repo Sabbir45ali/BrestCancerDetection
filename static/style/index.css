@@ -1,0 +1,198 @@
+*{
+  margin:0;
+  padding:0;
+  font-family: sans-serif;
+}
+.main-div{
+  height:100vh;
+  width:100%;
+  background: url(../images/bg1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.logo{
+  height:65;
+  width:60;
+  position: relative;
+  top:20px;
+  /* border: 2px solid black; */
+}
+.logo1{
+  position: relative;
+  left:25px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.712);
+}
+.logo-name{
+  position: relative;
+  bottom:25px;
+  left:40px;
+  font-size: 25px;
+  font-weight: bold;
+}
+.profile{
+  font-size: 35px;
+  position: relative;
+  color: rgb(218, 85, 129);
+ bottom:-7px;
+  left:17%;
+ 
+}
+.main-text-div{
+  position: relative;
+  top:10%;
+  left:20%;
+  height:35vh;
+  width:35%;
+  /* background-color: aquamarine; */
+}
+.text1{
+  font-size: 50px;
+  /* font-weight: bold; */
+  position: relative;
+  top:15px;
+  font-family: Nerko One;
+  /* left:35px; */
+}
+
+.text2{
+  font-size: 30px;
+  font-weight: 400;
+   position: relative;
+   left:20px;
+   top:45px;
+   font-family: Nerko One;
+  /* left: 20px; */
+}
+.nerko-one-regular {
+  font-family: "Nerko One", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.icon{
+  /* background-color: aquamarine; */
+  height: 50px;
+  width: 50px;
+  position: relative;
+  bottom:60px;
+  left:85%;
+  border:1px solid rgb(218, 85, 129);
+  border-radius: 50%;
+}
+.hover-text {
+  visibility: hidden; /* Hidden by default */
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  bottom: 16%; /* Position the text above the icon */
+  left: 200%;
+  transform: translateX(-50%);
+  white-space: nowrap; /* Prevent text wrapping */
+  opacity: 0; /* Make the text fully transparent */
+  transition: opacity 0.3s ease; /* Smooth transition for visibility */
+}
+.icon:hover .hover-text {
+  visibility: visible;
+  opacity: 1;  
+}
+
+
+.icon:hover i {
+  color: #e64331;  
+}
+.main-div2{
+  height:80vh;
+  width:100%;
+  /* display:flex;
+  justify-content: space-between;
+  align-items: center; */
+  /* background-color: #FE8EBC; */
+}
+.content{
+  height: 70vh;
+  position: relative;
+  top:10%;
+  display:flex;
+  justify-content: space-between;
+  align-items:center ;
+  /* background-color: antiquewhite; */
+}
+
+
+
+.box1{
+  position: relative;
+  left:5%;
+  height:60vh;
+   width:20%;
+   background-image: url(../images/img2.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   border-radius: 30px;
+}
+.img2{
+  height:60vh;
+   width:25%;
+}
+.box2{
+  height:60vh;
+   width:25%;
+  position: relative;
+  /* right:5%; */
+  /* top:25%; */
+  border:1px solid black;
+  border-radius: 30px;
+}
+.box3{
+  height:60vh;
+   width:35%;
+  position: relative;
+  right:7%;
+  /* top:25%; */
+  background-color: #fe8ebd4f;
+  border:1px solid black;
+  border-radius: 30px;
+}
+
+.text3{
+  font-size: 50px;
+  /* font-weight: bold; */
+  position: relative;
+  top:65px;
+  left:7%;
+  font-family: Nerko One;
+}
+.btn{
+  height:50px;
+  width:160px;
+  font-size: 20px;
+  position: relative;
+  top:45%;
+  font-weight: bold;
+  outline: none;
+  border-radius: 10px;
+  background-color: #FE8EBC;
+}
+h2{
+  
+  position: relative;
+  top:9%;
+  left:40%;
+}
+p{
+  font-size: 15px;
+  font-weight: 500;
+  position: relative;
+  top:20%;
+  left:1%;
+  right:2%;
+
+}
+.square{
+  font-size: 10px;
+}
