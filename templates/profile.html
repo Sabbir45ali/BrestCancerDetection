@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Page</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style/profile.css') }}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+</head>
+
+<body>
+  <div class="navbar-top">
+    <a href="{{ url_for('home') }}">
+      <img class="navbar-logo" src="{{url_for('static', filename='images/logo1.png')}}" alt="logo">
+    </a>
+    <div class="title">
+      <h1>Web Name</h1>
+    </div>
+    <ul>
+      <li>
+        <a href="#sign-out">
+          <i class="fa fa-sign-out-alt fa-2x"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="main">
+    <div class="identity-section">
+      <div class="profile-container">
+        <div class="profile-image">
+          <img id="profileImage" src="{{ url_for('static', filename='images/profileImage.png') }}" alt="Profile Image">
+          <input type="file" id="imageUpload" style="display: none;" accept="image/*" onchange="previewImage(event)">
+          <button onclick="document.getElementById('imageUpload').click()">Change Image</button>
+        </div>
+        <div class="profile-details">
+          <h2>Identity</h2>
+          <i class="fa fa-pen fa-xs edit" onclick="openModal()"></i>
+          <table>
+            <tbody>
+              <tr>
+                <td>Name</td>
+                <td id="name">XYZ</td>
+              </tr>
+              <tr>
+                <td>Email</td>
+                <td id="email">xyz.abc@gmail.com</td>
+              </tr>
+              <tr>
+                <td>Phone Number</td>
+                <td id="phone">123456789</td>
+              </tr>
+              <tr>
+                <td>Gender</td>
+                <td id="gender">Female</td>
+              </tr>
+              <tr>
+                <td>Blood Group</td>
+                <td id="blood">A+</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="previous-reports">
+        <h2>Previous Reports</h2>
+        <div class="card">
+          <div class="card-body">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="profileModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2>Edit Profile</h2>
+      <form id="profileForm" onsubmit="updateProfile(event)">
+        <label for="nameInput">Name:</label>
+        <input type="text" id="nameInput" required><br>
+
+        <label for="emailInput">Email:</label>
+        <input type="email" id="emailInput" required><br>
+
+        <label for="phoneInput">Phone Number:</label>
+        <input type="text" id="phoneInput" required><br>
+
+        <label for="genderInput">Gender:</label>
+        <select id="genderInput" required>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+          <option value="Other">Other</option>
+        </select><br>
+
+        <label for="bloodInput">Blood Group:</label>
+        <input type="text" id="bloodInput" required><br>
+
+        <button type="submit">Save</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+</body>
+
+</html>

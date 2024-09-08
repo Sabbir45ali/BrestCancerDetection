@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style/index.css') }}">
+</head>
+
+<body>
+    <div class="main-div">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="{{ url_for('static', filename='images/logo1.png') }}" alt="Logo" height="65" width="60"
+                    class="logo1">
+                <span class="logo-name">breast cancer</span>
+                <div class="icon"><a href="{{ url_for('profile') }}"><i class="fa-solid fa-user profile"></i></a>
+                    <div class="hover-text">User Profile</div>
+                </div>
+            </div>
+        </nav>
+        <div class="main-text-div">
+            <div class="text-div1"><span class="text1">Strength is not in facing cancer, but in fighting it with hope
+                    and resilience.</span></div>
+            <div class="text-div2"><span class="text2">"Early detection saves lives"</span></div>
+        </div>
+    </div>
+    <div class="main-div2" id="about">
+        <div class="content">
+            <div class="box1" id="box1"></div>
+            <div class="box2" id="box2"><span class="text3">"I Am and <br> I Will"</span><a
+                    href="{{ url_for('form') }}"><button class="btn">Test
+                        Yourself</button></a></div>
+            <div class="box3" id="box3">
+                <h2>Awareness</h2>
+                <p><i class="fa-solid fa-square square"></i> Breast cancer is the most common cancer among women
+                    worldwide.<br><br>
+                    <i class="fa-solid fa-square square"></i> Early detection significantly improves survival rates
+                    through regular screenings and self-examinations.<br><br>
+                    <i class="fa-solid fa-square square"></i> Risk factors include age, family history, and lifestyle,
+                    but everyone is at risk.<br><br>
+                    <i class="fa-solid fa-square square"></i> Early diagnosis and prompt treatment are crucial for
+                    effective outcomes.<br><br>
+                    <i class="fa-solid fa-square square"></i> Stay informed and proactive—early detection is key to
+                    saving lives.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

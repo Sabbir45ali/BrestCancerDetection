@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #FFE8F0;
+  font-family: 'Roboto', sans-serif; /* Use Roboto font */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background-color: #ffffff;
+  color: #000000;
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.navbar-left img {
+  height: 40px;
+  margin-right: 20px;
+}
+
+.navbar-title h1 {
+  margin: 0;
+  font-size: 28px; /* Increased font size for the navbar title */
+  font-weight: 400; /* Less bold */
+}
+
+.back-button {
+  position: fixed;
+  top: 70px; /* Adjust this value according to your navbar height */
+  left: 20px;
+  z-index: 1000;
+}
+
+.back-button a {
+  color: #333;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+  margin-top: 80px; /* Adjust according to navbar height */
+  margin-bottom: 20px; /* Adds space below the container */
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column; /* Stacks image and form vertically on small screens */
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  width: 100%;
+  max-width: 900px;
+}
+
+@media (min-width: 768px) {
+  .form-container {
+    flex-direction: row; /* Align image and form side by side on larger screens */
+  }
+}
+
+.image-section {
+  flex: 1;
+}
+
+.image-section img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px 0 0 10px;
+}
+
+.form-section {
+  flex: 1;
+  padding: 20px;
+}
+
+.form-section h2 {
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 32px; /* Increased font size for the form title */
+  font-weight: 300; /* Less bold */
+}
+
+.form-section label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 300; /* Less bold */
+  font-size: 18px; /* Slightly larger font size */
+}
+
+.form-section input {
+  width: calc(100% - 22px);
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px; /* Slightly larger font size */
+}
+
+.form-section button {
+  width: calc(100% - 22px);
+  padding: 10px;
+  background-color: #FE8EBC;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px; /* Slightly larger font size */
+}
+
+.form-section button:hover {
+  background-color: #fb3186;
+}
+
+/* Responsive Design for Mobile Devices */
+@media (max-width: 767px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-left img {
+    height: 30px;
+  }
+
+  .navbar-title h1 {
+    font-size: 24px; /* Adjusted font size for mobile screens */
+  }
+
+  .back-button {
+    top: 120px; /* Adjust this value according to your navbar height */
+  }
+}

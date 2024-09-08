@@ -1,0 +1,11 @@
+numpy
+scikit-learn
+pandas
+joblib
+Click
+Flask
+gunicorn
+itsdangerous
+Jinja2
+MarkupSafe
+Werkzeug

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Page</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style/form.css') }}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="navbar">
+    <div class="navbar-left">
+      <img src="{{ url_for('static', filename='images/logo1.png') }}" alt="Logo">
+    </div>
+    <div class="navbar-title">
+      <h1>Web name</h1>
+    </div>
+  </div>
+
+  <div class="back-button">
+    <a href="javascript:history.back()"><i class="fa fa-arrow-left fa"></i></a>
+  </div>
+
+  <div class="container">
+    <div class="form-container">
+      <div class="image-section">
+        <img src="{{ url_for('static', filename='images/formImage.jpg') }}" alt="Image">
+      </div>
+      <div class="form-section">
+        <h2>Breast Cancer Prediction</h2>
+        <form id="detailsForm" onsubmit="submitForm(event)" action="/predict" method="POST">
+          <label for="field1">Radius Mean:</label>
+          <input type="text" id="field1" name="radius_mean" required><br>
+
+          <label for="field2">Texture Mean:</label>
+          <input type="text" id="field2" name="texture_mean" required><br>
+
+          <label for="field3">Perimeter Mean:</label>
+          <input type="text" id="field3" name="perimeter_mean" required><br>
+
+          <label for="field4">Area Mean:</label>
+          <input type="text" id="field4" name="area_mean" required><br>
+
+          <label for="field5">Smoothness Mean:</label>
+          <input type="text" id="field5" name="smoothness_mean" required><br>
+
+          <label for="field6">Compactness Mean:</label>
+          <input type="text" id="field6" name="compactness_mean" required><br>
+
+          <label for="field7">Concavity Mean:</label>
+          <input type="text" id="field7" name="concavity_mean" required><br>
+
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+</body>
+
+</html>
