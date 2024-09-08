@@ -76,7 +76,7 @@ body{
   width:100%;
   outline: none;
 }
-.sign-up , sign-in{
+.sign-up , .sign-in{
   position: absolute;
   top:0;
   height:100%;
