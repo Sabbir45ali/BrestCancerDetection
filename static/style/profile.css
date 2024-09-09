@@ -13,7 +13,9 @@ body {
   margin: 0;
   overflow-x: hidden;
 }
-
+.title {
+  font-family: Nerko One;
+}
 /* Navbar Top */
 .navbar-top {
   background-color: #fff;
@@ -51,6 +53,39 @@ body {
 .navbar-top ul li a {
   color: #333;
   text-decoration: none;
+}
+.logout{
+  position: relative;
+  right: 250%;
+  /* background-color: #FE8EBC; */
+}
+.fa-2x{
+  position: relative;
+  right:5%;
+}
+.hover-text {
+  visibility: hidden; /* Hidden by default */
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  bottom: 16%; /* Position the text above the icon */
+  left: 200%;
+  transform: translateX(-50%);
+  white-space: nowrap; /* Prevent text wrapping */
+  opacity: 0; /* Make the text fully transparent */
+  transition: opacity 0.3s ease; /* Smooth transition for visibility */
+}
+.logout:hover .hover-text {
+  visibility: visible;
+  opacity: 1;  
+}
+
+
+.logout:hover i {
+  color: #e64331;  
 }
 
 /* Main Content */
@@ -214,7 +249,7 @@ body {
 
 .modal-content form button {
   padding: 10px 20px;
-  background-color: #4CAF50;
+  background-color: #FE8EBC;
   color: white;
   border: none;
   border-radius: 5px;
@@ -223,5 +258,5 @@ body {
 }
 
 .modal-content form button:hover {
-  background-color: #45a049;
+  background-color: #ff207d;
 }
