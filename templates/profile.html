@@ -15,12 +15,14 @@
       <img class="navbar-logo" src="{{url_for('static', filename='images/logo1.png')}}" alt="logo">
     </a>
     <div class="title">
-      <h1>Web Name</h1>
+      <h1>CareMammo</h1>
     </div>
     <ul>
       <li>
         <a href="#sign-out">
-          <i class="fa fa-sign-out-alt fa-2x"></i>
+          <div class="logout"><i class="fa fa-sign-out-alt fa-2x"></i>
+                   <span class="hover-text">log out</span>
+          </div>
         </a>
       </li>
     </ul>
@@ -100,7 +102,7 @@
     </div>
   </div>
 
-  <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
 
 </html>
